@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create An Account</title>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 50px;">
+        <h2>Create An Account</h2>
+        <form action="index.html" method="POST">
+            <input type="text" placeholder="Full Name" required><br><br>
+            <input type="email" placeholder="Email" required><br><br>
+            <input type="password" placeholder="Password" minlength="6" required><br><br>
+            
+            <select required>
+                <option value="" disabled selected>Select Role</option>
+                <option value="staff">HEP Staff</option>
+                <option value="donor">Donor</option>
+                <option value="student">Student</option>
+            </select><br><br>
+            
+            <button type="submit">Register</button>
+        </form>
+        <p><a href="index.html">Back to Login</a></p>
+    </div>
+</body>
+</html>
