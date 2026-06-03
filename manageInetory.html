@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HEP Staff - Manage Inventory</title>
+</head>
+<body>
+
+    <h1>HEP Staff View</h1>
+    <hr>
+
+    <table border="1" width="100%" cellpadding="10">
+        <tr>
+            <td width="20%" valign="top">
+                <h3>Food Bank System</h3>
+                <ul>
+                    <li><a href="hep_staff.html">Dashboard</a></li>
+                    <li><strong>Manage Inventory</strong></li>
+                    <li><a href="hep_distribution.html">Manage Distribution</a></li>
+                    <li><a href="login.html">Logout</a></li>
+                </ul>
+            </td>
+            
+            <td width="80%" valign="top">
+                <h2>Manage Inventory</h2>
+                
+                <fieldset>
+                    <legend><h3>+ Add New Item (Create)</h3></legend>
+                    <form action="hep_inventory.html" method="POST">
+                        <label>Item Name:</label> <input type="text" name="item_name" required> &nbsp;&nbsp;
+                        <label>Quantity:</label> <input type="number" name="quantity" required> &nbsp;&nbsp;
+                        <label>Expiry Date:</label> <input type="date" name="expiry_date" required> &nbsp;&nbsp;
+                        <input type="submit" value="Save New Item">
+                    </form>
+                </fieldset>
+                <br>
+
+                <h3>Current Stock Inventory Ledger (Read/Update/Delete)</h3>
+                <table border="1" cellpadding="8" width="100%">
+                    <thead>
+                        <tr bgcolor="#f0f0f0">
+                            <th>Item Name</th>
+                            <th>Quantity</th>
+                            <th>Expiry Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Instant Noodles (Pack of 5)</td>
+                            <td>150</td>
+                            <td>2027-12-01</td>
+                            <td>
+                                <button type="button" onclick="alert('Trigger Update Form workflow')">Edit</button> 
+                                <button type="button" onclick="return confirm('Are you sure you want to delete this record?')">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Canned Sardines (150g)</td>
+                            <td>200</td>
+                            <td>2028-04-15</td>
+                            <td>
+                                <button type="button" onclick="alert('Trigger Update Form workflow')">Edit</button> 
+                                <button type="button" onclick="return confirm('Are you sure you want to delete this record?')">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
