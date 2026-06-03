@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HEP Staff - Manage Distribution</title>
+</head>
+<body>
+
+    <h1>HEP Staff View</h1>
+    <hr>
+
+    <table border="1" width="100%" cellpadding="10">
+        <tr>
+            <td width="20%" valign="top">
+                <h3>Food Bank System</h3>
+                <ul>
+                    <li><a href="hep_staff.html">Dashboard</a></li>
+                    <li><a href="hep_inventory.html">Manage Inventory</a></li>
+                    <li><strong>Manage Distribution</strong></li>
+                    <li><a href="login.html">Logout</a></li>
+                </ul>
+            </td>
+            
+            <td width="80%" valign="top">
+                <h2>Distribution Tracking & Approvals</h2>
+                <p>Monitor and manage requests from student voucher distributions.</p>
+                
+                <table border="1" cellpadding="8" width="100%">
+                    <thead>
+                        <tr bgcolor="#f0f0f0">
+                            <th>Student Name</th>
+                            <th>Item Requested</th>
+                            <th>Quantity</th>
+                            <th>Request Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hamzah (Ahmad)</td>
+                            <td>Premium White Rice (5kg)</td>
+                            <td>1 Unit</td>
+                            <td>2026-06-01</td>
+                            <td>
+                                <button type="button" style="background-color: #d4edda;" onclick="alert('Request Approved Successfully')">Approve</button> 
+                                <button type="button" style="background-color: #f8d7da;" onclick="alert('Request Declined')">Decline</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Siti Aminah</td>
+                            <td>Instant Noodles (Pack of 5)</td>
+                            <td>2 Units</td>
+                            <td>2026-06-03</td>
+                            <td>
+                                <button type="button" style="background-color: #d4edda;" onclick="alert('Request Approved Successfully')">Approve</button> 
+                                <button type="button" style="background-color: #f8d7da;" onclick="alert('Request Declined')">Decline</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
