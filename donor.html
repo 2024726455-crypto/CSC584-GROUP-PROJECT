@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donor Dashboard</title>
+</head>
+<body>
+
+    <h1>Donor View</h1>
+    <hr>
+
+    <table border="1" width="100%" cellpadding="10">
+        <tr>
+            <td width="20%" valign="top">
+                <h3>Food Bank System</h3>
+                <ul>
+                    <li><a href="#">Log Donation</a></li>
+                    <li><strong>Donation History</strong></li>
+                    <li><a href="login.html">Logout</a></li>
+                </ul>
+            </td>
+            
+            <td width="80%" valign="top">
+                <table border="1" width="100%" cellpadding="10">
+                    <tr>
+                        <td>
+                            <h3>Welcome, Aziz!</h3>
+                            <p><em>Thank you for your generosity!</em></p>
+                        </td>
+                        <td align="center" width="30%">
+                            <strong>Total Donated</strong>
+                            <h1>50</h1>
+                            <p>meals/items</p>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+
+                <h3>Donation History</h3>
+                <table border="1" cellpadding="5" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <button type="button">View All History</button>
+                <br><br>
+
+                <fieldset>
+                    <legend><h3>Log New Donation</h3></legend>
+                    <form>
+                        <label>Item Name:</label><br>
+                        <input type="text" name="item_name" size="40"><br><br>
+                        
+                        <label>Quantity:</label><br>
+                        <input type="number" name="quantity"><br><br>
+                        
+                        <label>Expiry Date:</label><br>
+                        <input type="date" name="expiry_date"><br><br>
+                        
+                        <input type="submit" value="Submit Donation"><br>
+                    </form>
+                </fieldset>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
