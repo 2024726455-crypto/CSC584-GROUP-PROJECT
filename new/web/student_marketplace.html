@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student View - Food Bank Items</title>
+</head>
+<body>
+
+    <h1>Student View | Food Bank & Social Voucher System</h1>
+    <hr>
+
+    <table border="1" width="100%" cellpadding="10">
+        <tr>
+            <td width="20%" valign="top">
+                <h3>Food Bank System</h3>
+                <ul>
+                    <li><strong>View Food Bank</strong></li>
+                    <li><a href="student.html">My Vouchers</a></li>
+                    <li><a href="login.html">Logout</a></li>
+                </ul>
+            </td>
+            
+            <td width="80%" valign="top">
+                
+                <h2>Available Food Items Marketplace</h2>
+                <p>Select an item below to claim. Each claim will deduct 1 voucher from your balance and requires HEP approval to generate your Voucher Number and PIN.</p>
+                <br>
+
+                <form action="student.html" method="get">
+                    <table border="1" cellpadding="8" width="100%">
+                        <thead>
+                            <tr>
+                                <th>Food Item Name</th>
+                                <th>Available Quantity</th>
+                                <th>Voucher Cost</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Premium White Rice (5kg)</td>
+                                <td>35 bags remaining</td>
+                                <td>1 Voucher</td>
+                                <td align="center">
+                                    <input type="submit" value="Claim / Request Item">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Instant Noodles (Pack of 5)</td>
+                                <td>150 packs remaining</td>
+                                <td>1 Voucher</td>
+                                <td align="center">
+                                    <input type="submit" value="Claim / Request Item">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Canned Sardines (150g)</td>
+                                <td>200 cans remaining</td>
+                                <td>1 Voucher</td>
+                                <td align="center">
+                                    <input type="submit" value="Claim / Request Item">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+
+                <br>
+                <p><small>* Note: Submitting a request triggers the system backend to verify eligibility before creating the active Voucher No & PIN numbers.</small></p>
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

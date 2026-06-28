@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donor - Log Donation</title>
+</head>
+<body>
+
+    <h1>Donor View | Gerobok-Prihatin System</h1>
+    <hr>
+
+    <table border="1" width="100%" cellpadding="10">
+        <tr>
+            <td width="20%" valign="top">
+                <h3>Food Bank System</h3>
+                <ul>
+                    <li><a href="donorWishlist.html">Live Wishlist</a></li>
+                    <li><strong>Log Donation</strong></li>
+                    <li><a href="donorHistory.html">Donation History</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </td>
+            
+            <td width="80%" valign="top">
+                <table border="1" width="100%" cellpadding="10">
+                    <tr>
+                        <td>
+                            <h3>Welcome, Aziz!</h3>
+                            <p><em>Thank you for your generosity!</em></p>
+                        </td>
+                        <td align="center" width="30%">
+                            <strong>Total Donated Items</strong>
+                            <h1>50</h1>
+                            <p>meals/items logged</p>
+                        </td>
+                    </tr>
+                </table>
+                <br><br>
+
+                <fieldset>
+                    <legend><h3>Log New Donation Package</h3></legend>
+                    <p style="font-size: 14px; color: #555;">Please enter the details of the items you wish to drop off at the central storage unit repository.</p>
+                    <br>
+                    
+                    <form action="donorHistory.html" method="POST">
+                        <table border="0" cellpadding="5">
+                            <tr>
+                                <td><label><b>Item Name / Description:</b></label></td>
+                                <td><input type="text" name="item_name" size="40" placeholder="e.g., Cooking Oil (1kg Pouch)" required></td>
+                            </tr>
+                            <tr>
+                                <td><label><b>Batch Quantity Amount:</b></label></td>
+                                <td><input type="number" name="quantity" min="1" style="width: 100px;" required> units</td>
+                            </tr>
+                            <tr>
+                                <td><label><b>Package Expiry Date:</b></label></td>
+                                <td><input type="date" name="expiry_date" required></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <br>
+                                    <input type="submit" value="Submit Donation" style="padding: 5px 15px; font-weight: bold;">
+                                    <input type="reset" value="Clear Form">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

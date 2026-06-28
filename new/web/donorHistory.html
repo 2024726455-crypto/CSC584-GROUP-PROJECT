@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donor - Donation History</title>
+</head>
+<body>
+
+    <h1>Donor View | Gerobok-Prihatin System</h1>
+    <hr>
+
+    <table border="1" width="100%" cellpadding="10">
+        <tr>
+            <td width="20%" valign="top">
+                <h3>Food Bank System</h3>
+                <ul>
+                    <li><a href="donorWishlist.html">Live Wishlist</a></li>
+                    <li><a href="donor.html">Log Donation</a></li>
+                    <li><strong>Donation History</strong></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </td>
+            
+            <td width="80%" valign="top">
+                <h2>Your Historic Contribution Logs</h2>
+                <p>Below is the record of your contribution logs that have been successfully verified and saved into the database system repository.</p>
+                <br>
+                
+                <table border="1" cellpadding="8" width="100%" style="border-collapse: collapse; text-align: left;">
+                    <thead>
+                        <tr>
+                            <th>Receipt ID</th>
+                            <th>Item Description Name</th>
+                            <th>Quantity Logged</th>
+                            <th>Submission Date</th>
+                            <th>Status Vault</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>REC-9941</td>
+                            <td>Premium White Rice (5kg)</td>
+                            <td>10 Bags</td>
+                            <td>2026-05-20</td>
+                            <td>Verified by HEP</td>
+                        </tr>
+                        <tr>
+                            <td>REC-9820</td>
+                            <td>Instant Noodles (Pack of 5)</td>
+                            <td>40 Packs</td>
+                            <td>2026-05-18</td>
+                            <td>Verified by HEP</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <button type=\"button\" onclick=\"alert('Printing historical receipts to PDF...')\">Download Audit Report (PDF)</button>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

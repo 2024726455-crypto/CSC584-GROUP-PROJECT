@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HEP Staff - Manage Inventory</title>
+</head>
+<body>
+
+    <h1>HEP Staff View</h1>
+    <hr>
+
+    <table border="1" width="100%" cellpadding="10">
+        <tr>
+            <td width="20%" valign="top">
+                <h3>Food Bank System</h3>
+                <ul>
+                    <li><a href="hep_staff.html">Dashboard</a></li>
+                    <li><strong>Manage Inventory</strong></li>
+                    <li><a href="HepDistribution.html">Manage Distribution</a></li>
+                    <li><a href="logout.html">Logout</a></li> </ul>
+            </td>
+            
+            <td width="80%" valign="top">
+                <h2>Manage Stock Inventory</h2>
+                
+                <fieldset>
+                    <legend><h3>+ Add New Stock Item (Create)</h3></legend>
+                    <form action="HepInventory.html" method="POST"> <table border="0" cellpadding="5">
+                            <tr>
+                                <td><label>Item Name:</label></td>
+                                <td><input type="text" name="item_name" required size="30"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Quantity:</label></td>
+                                <td><input type="number" name="quantity" min="1" required style="width: 80px;"> units</td>
+                            </tr>
+                            <tr>
+                                <td><label>Expiry Date:</label></td>
+                                <td><input type="date" name="expiry_date" required></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <br>
+                                    <input type="submit" value="Add to Inventory">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset>
+                <br>
+
+                <h3>Current Stock Inventory Records</h3>
+                <table border="1" cellpadding="8" width="100%">
+                    <thead>
+                        <tr bgcolor="#f0f0f0">
+                            <th>Item Name</th>
+                            <th>Quantity</th>
+                            <th>Expiry Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Premium White Rice (5kg)</td>
+                            <td>35</td>
+                            <td>2027-08-12</td>
+                            <td>
+                                <button type="button" onclick="alert('Trigger Update workflow')">Edit</button> 
+                                <button type="button" onclick="return confirm('Delete this item?')">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Instant Noodles (Pack of 5)</td>
+                            <td>150</td>
+                            <td>2026-12-25</td>
+                            <td>
+                                <button type="button" onclick="alert('Trigger Update workflow')">Edit</button> 
+                                <button type="button" onclick="return confirm('Delete this item?')">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
